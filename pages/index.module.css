@@ -1,0 +1,467 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  padding: 100px 24px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.heroBgGlow1 {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 500px;
+  background: radial-gradient(ellipse, rgba(0, 212, 255, 0.12) 0%, transparent 70%);
+}
+
+.heroBgGlow2 {
+  position: absolute;
+  bottom: -50px;
+  right: -100px;
+  width: 500px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+}
+
+.heroBgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 212, 255, 0.08);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  color: var(--cyan);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.heroTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(38px, 6vw, 64px);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.heroTitleAccent {
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--purple-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSub {
+  font-size: 18px;
+  color: var(--text2);
+  line-height: 1.7;
+  max-width: 580px;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ctaPrimary {
+  padding: 13px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--bg);
+  background: var(--cyan);
+  border-radius: 10px;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ctaPrimary:hover {
+  background: #33deff;
+  transform: translateY(-2px);
+}
+
+.ctaSecondary {
+  padding: 13px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ctaSecondary:hover {
+  background: var(--bg2);
+  border-color: var(--cyan-dim);
+  transform: translateY(-2px);
+}
+
+.heroStats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.statVal {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.statLabel {
+  font-size: 12px;
+  color: var(--text3);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionTag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.sectionTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+
+.sectionSub {
+  font-size: 16px;
+  color: var(--text2);
+  max-width: 480px;
+}
+
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.sectionCta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.viewAll {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--cyan);
+  background: var(--cyan-glow2);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 10px;
+  transition: background 0.2s, border-color 0.2s;
+  text-decoration: none;
+}
+
+.viewAll:hover {
+  background: var(--cyan-glow);
+  border-color: var(--cyan-dim);
+}
+
+/* FEATURES */
+.features {
+  padding: 80px 0;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.featureCard {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.featureCard:hover {
+  border-color: var(--border2);
+  transform: translateY(-2px);
+}
+
+.featureIcon {
+  font-size: 28px;
+}
+
+.featureTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.featureDesc {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+/* PRICING */
+.pricing {
+  padding: 80px 0;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.planCard {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.planHighlight {
+  border-color: var(--cyan-dim);
+  background: linear-gradient(160deg, rgba(0,212,255,0.04) 0%, var(--card-bg) 50%);
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.08);
+}
+
+.planBadge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cyan);
+  color: var(--bg);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.planName {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.planPrice {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.planAmount {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.planPeriod {
+  font-size: 13px;
+  color: var(--text2);
+}
+
+.planFeatures {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.planFeature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text2);
+}
+
+.planCheck {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.planCta {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  transition: background 0.2s, border-color 0.2s;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.planCta:hover {
+  background: var(--bg2);
+  border-color: var(--text3);
+}
+
+.planCta a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.planCtaHighlight {
+  color: var(--bg);
+  background: var(--cyan);
+  border-color: var(--cyan);
+}
+
+.planCtaHighlight:hover {
+  background: #33deff;
+  border-color: #33deff;
+}
+
+/* CTA BANNER */
+.ctaBanner {
+  padding: 80px 0;
+  background: var(--bg2);
+  border-top: 1px solid var(--border);
+}
+
+.ctaBannerInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.ctaBannerTitle {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+
+.ctaBannerSub {
+  font-size: 17px;
+  color: var(--text2);
+  max-width: 480px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 60px 16px 60px;
+  }
+
+  .heroStats {
+    gap: 24px;
+  }
+
+  .heroCtas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ctaPrimary, .ctaSecondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}

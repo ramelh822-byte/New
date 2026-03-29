@@ -212,18 +212,23 @@ export default function Home() {
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href={plan.href.startsWith('http') ? plan.href : undefined}
-                    target={plan.href.startsWith('http') ? '_blank' : undefined}
-                    rel={plan.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className={`${styles.planCta} ${plan.highlight ? styles.planCtaHighlight : ''}`}
-                  >
-                    {plan.href.startsWith('http') ? (
-                      plan.cta
-                    ) : (
-                      <Link href={plan.href}>{plan.cta}</Link>
-                    )}
-                  </a>
+                  {plan.href.startsWith('http') ? (
+                    <a
+                      href={plan.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`${styles.planCta} ${plan.highlight ? styles.planCtaHighlight : ''}`}
+                    >
+                      {plan.cta}
+                    </a>
+                  ) : (
+                    <Link
+                      href={plan.href}
+                      className={`${styles.planCta} ${plan.highlight ? styles.planCtaHighlight : ''}`}
+                    >
+                      {plan.cta}
+                    </Link>
+                  )}
                 </div>
               ))}
             </div>
