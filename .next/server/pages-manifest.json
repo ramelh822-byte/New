@@ -1,6 +1,12 @@
 {
+  "/": "pages/index.html",
+  "/404": "pages/404.html",
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/_error": "pages/_error.js",
+  "/ai-tutor": "pages/ai-tutor.html",
+  "/api/chat": "pages/api/chat.js",
+  "/courses": "pages/courses.html",
+  "/privacy": "pages/privacy.html",
+  "/terms": "pages/terms.html"
 }
