@@ -15,10 +15,10 @@ export default function Footer() {
               Master Any Skill With AI Guidance. Personalized learning paths that adapt to you — available anywhere, anytime.
             </p>
             <div className={styles.socials}>
-              <a href="#" className={styles.social} aria-label="Twitter/X">𝕏</a>
-              <a href="#" className={styles.social} aria-label="LinkedIn">in</a>
-              <a href="#" className={styles.social} aria-label="YouTube">▶</a>
-              <a href="#" className={styles.social} aria-label="Instagram">📷</a>
+              <a href="https://x.com/planetleads" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="Twitter/X">𝕏</a>
+              <a href="https://linkedin.com/company/planet-leads" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="LinkedIn">in</a>
+              <a href="https://youtube.com/@planetleads" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="YouTube">▶</a>
+              <a href="https://instagram.com/planetleads" target="_blank" rel="noopener noreferrer" className={styles.social} aria-label="Instagram">📷</a>
             </div>
           </div>
 
@@ -36,17 +36,17 @@ export default function Footer() {
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Company</h4>
             <ul className={styles.colLinks}>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Press</a></li>
+              <li><a href="mailto:planetleads1@gmail.com">About Us</a></li>
+              <li><a href="mailto:planetleads1@gmail.com">Blog</a></li>
+              <li><a href="mailto:planetleads1@gmail.com">Careers</a></li>
+              <li><a href="mailto:planetleads1@gmail.com">Press</a></li>
             </ul>
           </div>
 
           <div className={styles.col}>
             <h4 className={styles.colTitle}>Support</h4>
             <ul className={styles.colLinks}>
-              <li><a href="#">Help Center</a></li>
+              <li><a href="mailto:planetleads1@gmail.com">Help Center</a></li>
               <li><a href="mailto:planetleads1@gmail.com">Contact</a></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <li><Link href="/terms">Terms of Service</Link></li>
