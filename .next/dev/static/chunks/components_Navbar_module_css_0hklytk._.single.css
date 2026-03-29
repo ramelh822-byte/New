@@ -1,0 +1,198 @@
+/* [project]/components/Navbar.module.css [client] (css) */
+.Navbar-module__nuAbfa__nav {
+  z-index: 100;
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-height);
+  background: #0a0a0fd9;
+  position: sticky;
+  top: 0;
+}
+
+.Navbar-module__nuAbfa__inner {
+  align-items: center;
+  gap: 32px;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+}
+
+.Navbar-module__nuAbfa__logo {
+  flex-shrink: 0;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  display: flex;
+}
+
+.Navbar-module__nuAbfa__logoIcon {
+  font-size: 22px;
+}
+
+.Navbar-module__nuAbfa__logoText {
+  color: var(--white);
+  white-space: nowrap;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.Navbar-module__nuAbfa__links {
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  display: flex;
+}
+
+.Navbar-module__nuAbfa__link {
+  color: var(--text2);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .2s, background .2s;
+}
+
+.Navbar-module__nuAbfa__link:hover {
+  color: var(--text);
+  background: var(--bg3);
+}
+
+.Navbar-module__nuAbfa__aiLink {
+  color: var(--cyan) !important;
+}
+
+.Navbar-module__nuAbfa__aiLink:hover {
+  background: var(--cyan-glow2) !important;
+  color: var(--cyan) !important;
+}
+
+.Navbar-module__nuAbfa__actions {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.Navbar-module__nuAbfa__signIn {
+  color: var(--text2);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.Navbar-module__nuAbfa__signIn:hover {
+  color: var(--text);
+}
+
+.Navbar-module__nuAbfa__cta {
+  color: var(--bg);
+  background: var(--cyan);
+  white-space: nowrap;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s, transform .15s;
+}
+
+.Navbar-module__nuAbfa__cta:hover {
+  background: #33deff;
+  transform: translateY(-1px);
+}
+
+.Navbar-module__nuAbfa__burger {
+  cursor: pointer;
+  background: none;
+  border: none;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: auto;
+  padding: 4px;
+  display: none;
+}
+
+.Navbar-module__nuAbfa__bar {
+  background: var(--text);
+  border-radius: 2px;
+  width: 22px;
+  height: 2px;
+  transition: transform .25s, opacity .25s;
+  display: block;
+}
+
+.Navbar-module__nuAbfa__barOpen1 {
+  transform: translateY(7px)rotate(45deg);
+}
+
+.Navbar-module__nuAbfa__barOpen2 {
+  opacity: 0;
+}
+
+.Navbar-module__nuAbfa__barOpen3 {
+  transform: translateY(-7px)rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .Navbar-module__nuAbfa__inner {
+    padding: 0 16px;
+    position: relative;
+  }
+
+  .Navbar-module__nuAbfa__links {
+    top: var(--nav-height);
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 0;
+    padding: 12px 16px;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .Navbar-module__nuAbfa__linksOpen {
+    display: flex;
+  }
+
+  .Navbar-module__nuAbfa__link {
+    width: 100%;
+    padding: 12px 14px;
+  }
+
+  .Navbar-module__nuAbfa__actions {
+    top: calc(var(--nav-height) + 120px);
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 16px 20px;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .Navbar-module__nuAbfa__actionsOpen {
+    display: flex;
+  }
+
+  .Navbar-module__nuAbfa__signIn, .Navbar-module__nuAbfa__cta {
+    text-align: center;
+    width: 100%;
+  }
+
+  .Navbar-module__nuAbfa__burger {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=components_Navbar_module_css_0hklytk._.single.css.map*/

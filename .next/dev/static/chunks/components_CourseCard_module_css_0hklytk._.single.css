@@ -1,0 +1,91 @@
+/* [project]/components/CourseCard.module.css [client] (css) */
+.CourseCard-module__weOBza__card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+  display: flex;
+}
+
+.CourseCard-module__weOBza__card:hover {
+  border-color: var(--cyan-dim);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px #00d4ff14;
+}
+
+.CourseCard-module__weOBza__top {
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.CourseCard-module__weOBza__emoji {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.CourseCard-module__weOBza__category {
+  color: var(--cyan);
+  background: var(--cyan-glow2);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  white-space: nowrap;
+  border: 1px solid #00d4ff33;
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.CourseCard-module__weOBza__title {
+  color: var(--white);
+  font-family: Space Grotesk, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.CourseCard-module__weOBza__desc {
+  color: var(--text2);
+  flex: 1;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.CourseCard-module__weOBza__footer {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+  display: flex;
+}
+
+.CourseCard-module__weOBza__price {
+  color: var(--white);
+  font-family: Space Grotesk, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.CourseCard-module__weOBza__btn {
+  color: var(--bg);
+  background: var(--cyan);
+  white-space: nowrap;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .2s, transform .15s;
+}
+
+.CourseCard-module__weOBza__btn:hover {
+  background: #33deff;
+  transform: translateY(-1px);
+}
+
+/*# sourceMappingURL=components_CourseCard_module_css_0hklytk._.single.css.map*/

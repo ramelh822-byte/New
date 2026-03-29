@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///home/runner/workspace/pages/_document.tsx"],"sourcesContent":["import { Html, Head, Main, NextScript } from 'next/document';\n\nexport default function Document() {\n  return (\n    <Html lang=\"en\">\n      <Head>\n        <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\" />\n        <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossOrigin=\"anonymous\" />\n        <link\n          href=\"https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap\"\n          rel=\"stylesheet\"\n        />\n        <link rel=\"icon\" href=\"/favicon.ico\" />\n      </Head>\n      <body>\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}\n"],"names":["Document","lang","rel","href","crossOrigin"],"mappings":";;;;;AAAA;;;AAEe,SAASA;IACtB,qBACE,qKAAC,iIAAI;QAACC,MAAK;;0BACT,qKAAC,iIAAI;;kCACH,qKAAC;wBAAKC,KAAI;wBAAaC,MAAK;;;;;;kCAC5B,qKAAC;wBAAKD,KAAI;wBAAaC,MAAK;wBAA4BC,aAAY;;;;;;kCACpE,qKAAC;wBACCD,MAAK;wBACLD,KAAI;;;;;;kCAEN,qKAAC;wBAAKA,KAAI;wBAAOC,MAAK;;;;;;;;;;;;0BAExB,qKAAC;;kCACC,qKAAC,iIAAI;;;;;kCACL,qKAAC,uIAAU;;;;;;;;;;;;;;;;;AAInB"}}]
+}
