@@ -21,8 +21,8 @@ export default function Navbar() {
         </div>
 
         <div className={`${styles.actions} ${open ? styles.actionsOpen : ''}`}>
-          <a href="https://rayhymn.gumroad.com/" target="_blank" rel="noopener noreferrer" className={styles.signIn}>
-            Sign In
+          <a href="https://app.gumroad.com/library" target="_blank" rel="noopener noreferrer" className={styles.signIn}>
+            My Courses
           </a>
           <Link href="/courses" className={styles.cta} onClick={() => setOpen(false)}>
             Get Started
@@ -42,3 +42,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
