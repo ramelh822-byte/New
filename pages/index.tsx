@@ -8,7 +8,7 @@ import styles from './index.module.css';
 
 const stats = [
   { value: '25+', label: 'Courses' },
-  { value: '10K+', label: 'Students' },
+  { value: '500+', label: 'Students' },
   { value: '4.9★', label: 'Rating' },
   { value: '95%', label: 'Completion Rate' },
 ];
@@ -241,7 +241,7 @@ export default function Home() {
             <div className={styles.ctaBannerInner}>
               <h2 className={styles.ctaBannerTitle}>Ready to Start Learning?</h2>
               <p className={styles.ctaBannerSub}>
-                Join over 10,000 students already transforming their skills with AI-powered education.
+                Join hundreds of students already transforming their skills with AI-powered education.
               </p>
               <Link href="/courses" className={styles.ctaPrimary}>
                 Browse All Courses →
@@ -255,3 +255,4 @@ export default function Home() {
     </>
   );
 }
+
